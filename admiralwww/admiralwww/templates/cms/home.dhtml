@@ -1,0 +1,10 @@
+{% extends "cms/base.dhtml" %}
+<!DOCTYPE html>
+	{% load i18n %}
+	{% load url from future %}
+	{% load cms_tags sekizai_tags %}	
+
+{% render_block "css" %}
+{% render_block "js" %}
+	
+<h1>HI</h1>
