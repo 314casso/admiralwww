@@ -59,6 +59,9 @@
 				
 				    {% show_menu 0 100 100 100 %}				
                 
+                	<li>
+                    	<a href="http://office.nmcc.ru/">Веб-офис</a>
+					</li>
                     <!--
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
@@ -210,7 +213,7 @@
                 <h2 class="page-header">Услуги</h2>
                 
                 <div class="list-group">
-				  <div href="#" class="list-group-item">
+				  <div href="#" class="list-group-item" style="padding: 30px 15px">
 				  
 				  <div style="float:left; padding: 0 15px 0 0">
 					    <svg style="width:32px;"  viewBox="0 0 179.49055 144.13537">  
@@ -231,7 +234,7 @@
 				    </p>
 				  </div>
 				  
-				  <div href="#" class="list-group-item">
+				  <div href="#" class="list-group-item" style="padding: 30px 15px">
 				  	<div style="float:left; padding: 0 10px 0 0">
 					    <svg style="width:38px;" viewBox="0 0 203.4541 123.67625">
 						  <g   
@@ -250,7 +253,7 @@
 				    </p>
 				  </div>
 				  
-				  <div href="#" class="list-group-item">
+				  <div href="#" class="list-group-item" style="padding: 30px 15px">
 				  	<div style="float:left; padding: 0 15px 0 0">
 					    <svg style="width:32px;" viewBox="0 0 151.28805 172.57134">
   							<g transform="translate(-244.35597,-431.79081)">
@@ -268,7 +271,7 @@
 				    </p>
 				  </div>
 				  
-				  <div href="#" class="list-group-item">
+				  <div href="#" class="list-group-item" style="padding: 30px 15px">
 				  	<div style="float:left; padding: 0 10px 0 0">
 					    <svg style="width:38px;" viewBox="0 0 191.7144 106.6983">						
 						  <g transform="translate(-164.14284,-413.29877)">
@@ -293,14 +296,6 @@
         <!-- /.row -->
 
 
-<!--
-Офис:	             
-Адрес:             353915, г. Новороссийск, ул. Пархоменко, 30
-Телефон:	       +7 8617 676044, 676045, 676046
-Электронная почта: nmcc@nmcc.ru	
-Часы работы:	 Пн-Пт 08:30-17:30
--->
-
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -309,15 +304,12 @@
             <div class="col-md-6">
                 <p>ООО «Новороссийская Морская Контейнерная Компания»:</p>
                 <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
+                    <li><span class="label label-default">Адрес</span><strong> 353915, г. Новороссийск, ул. Пархоменко, 30</strong>
                     </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                    <li><span class="label label-default">Телефон</span> +7 8617 676044, 676045, 676046</li>
+                    <li><span class="label label-default">Email</span> nmcc@nmcc.ru</li>
+                    <li><span class="label label-default">Часы работы</span> Пн-Пт 08:30-17:30</li>                    
+                </ul>                
             </div>
             <div class="col-md-6">
                 <!-- <img class="img-responsive" src="http://placehold.it/700x450" alt=""> -->
@@ -331,10 +323,10 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <p>Электронный кабинет клиента компании</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <a class="btn btn-lg btn-default btn-block" href="http://office.nmcc.ru/">Веб-офис</a>
                 </div>
             </div>
         </div>
@@ -345,7 +337,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; NMCC 2016</p>
                 </div>
             </div>
         </footer>
