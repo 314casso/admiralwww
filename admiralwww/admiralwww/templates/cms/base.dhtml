@@ -59,7 +59,7 @@
 				    {% show_menu 0 100 100 100 %}				
                 
                 	<li>
-                    	<a href="http://office.nmcc.ru/">Веб-офис</a>
+                    	<a href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
 					</li>
                     <!--
                     <li class="dropdown">
@@ -325,7 +325,7 @@
                     <p>Электронный кабинет клиента компании</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="http://office.nmcc.ru/">Веб-офис</a>
+                    <a class="btn btn-lg btn-default btn-block" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
                 </div>
             </div>
         </div>
