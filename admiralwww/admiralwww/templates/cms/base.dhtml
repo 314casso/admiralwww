@@ -307,7 +307,7 @@
                     <li><span class="label label-default">Адрес</span><strong> 353915, г. Новороссийск, ул. Пархоменко, 30</strong>
                     </li>
                     <li><span class="label label-default">Телефон</span> +7 8617 676044, 676045, 676046</li>
-                    <li><span class="label label-default">Email</span> nmcc@nmcc.ru</li>
+                    <li><span class="label label-default">Email</span> {% get_param "office_email" "email" %}</li>
                     <li><span class="label label-default">Часы работы</span> Пн-Пт 08:30-17:30</li>                    
                 </ul>                
             </div>
