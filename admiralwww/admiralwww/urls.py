@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from bootstrap.views import port_services
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -20,6 +21,7 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^port-services/', port_services, name='port_services'),
     url(r'^', include('cms.urls')),
 )
 

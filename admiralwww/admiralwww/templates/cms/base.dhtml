@@ -90,7 +90,8 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    
+    
     <!-- Header Carousel -->
     {% if false %}
     <header id="myCarousel" class="carousel slide">
@@ -170,7 +171,7 @@
                     </div>
                     <div class="panel-body">
                     	<div class="list-group">						  
-						  <a href="#" class="list-group-item"->Тарифы на портовую обработку импорт 2016</a>
+						  <a href="{% url 'port_services' %}" data-toggle="modal" data-target="#myModal" class="list-group-item"->Тарифы на портовую обработку импорт 2016</a>
 						  <a href="#" class="list-group-item">Ставки демерреджа Admiral Container Lines Inc 2016</a>						  
 						</div>
                     </div>
@@ -343,6 +344,23 @@
         </footer>
 
     </div>
+    
+    
+<!-- Trigger the modal with a button -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-wide modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+    </div>
+
+  </div>
+</div>
+    
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -357,6 +375,9 @@
         interval: 5000 //changes the speed
     })
     </script>
+        
+    <!-- Export to Excel JavaScript -->
+    <script src="{{ STATIC_URL }}bootstrap/js/excellentexport.min.js"></script>
 	{% render_block "js" %}
 </body>
 

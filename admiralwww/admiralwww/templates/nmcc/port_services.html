@@ -1,0 +1,51 @@
+<div class="modal-header">	
+	<button type="button" class="close" data-dismiss="modal">&times;</button>	
+	<h4 class="modal-title">Тарифы на портовую обработку импорт</h4>	
+</div>
+<div class="modal-body">
+	
+	<table id="port-services" class="table-data">		
+	
+	<thead class="panel panel-success">
+      <tr>
+        <th rowspan="2">Наименование услуги</th>
+        <th rowspan="2">Ед. изм.</th>
+        <th rowspan="2">Ставка НДС</th>        
+        <th colspan="2">Неопасный груз, не превышающий габариты контейнера</th>
+        <th colspan="2">Опасный груз, не превышающий габариты контейнера</th>
+        <th>Груз, перевозящийся с контролируемым температурным режимом</th>        
+      </tr>
+      <tr>
+        <th>20'DC/OT</th>
+        <th>40'DC/HC/OT</th>
+        <th>20'DC/OT</th>
+        <th>40'DC/HC/OT</th>                
+        <th>40'реф</th>
+      </tr>
+    </thead>
+	
+	{% for rate in services %}
+	{% if rate.sort_order == 1200 %}
+		<tr>
+			<th colspan="100%">Организация хранения груженых контейнеров</th>
+		</tr>
+	{% endif %}	
+	<tr>
+		<td>{{ rate }}</td>
+		<td>{{ rate.port_servicie.measure }}</td>
+		<td class="right">{{ rate.port_servicie.nds }}</td>
+		
+		{% for colspan_rate in rate.colspan_rates %}
+			<td class="right" {% if colspan_rate.colspan > 1 %} colspan="{{ colspan_rate.colspan }}" {% endif %}>{{ colspan_rate.rate }}</td>
+		{% endfor %}
+					
+		
+				
+	</tr>
+	{% endfor %}
+	</table>
+</div>
+<div class="modal-footer">
+<a class="btn btn-info" role="button" download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'port-services', 'Тарифы на портовую обработку импорт');">Экспорт в MS Excel</a>
+	<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>	
+</div>
