@@ -5,6 +5,6 @@
 .pydevproject
 local_settings.py
 *.*~
-rusconwww/media/*
-rusconwww/static/*
-rusconwww/wsgi.py
+admiralwww/media/*
+admiralwww/static/*
+admiralwww/wsgi.py
