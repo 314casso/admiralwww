@@ -67,7 +67,7 @@
 				    {% show_menu 0 100 100 100 %}				
                 
                 	<li>
-                    	<a href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
+                    	<a target="_blank" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
 					</li>
                     <!--
                     <li class="dropdown">
@@ -180,7 +180,7 @@
 					  </div>
 					  
 					    <h3 class="list-group-item-heading">
-					    	<a class="service-link" href="http://office.nmcc.ru/e-office/ru_RU/">
+					    	<a target="_blank" class="service-link" href="http://office.nmcc.ru/e-office/ru_RU/">
 					    		Заявка на досмотр
 					    	</a>
 					    </h3>
@@ -367,7 +367,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <h2>Электронный кабинет клиента компании</h2>
-                    <a class="btn btn-default" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
+                    <a target="_blank" class="btn btn-default" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
                 </div>                
             </div>
         
