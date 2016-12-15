@@ -344,7 +344,7 @@
 			</div>
           
         <!-- Features Section -->
-        <div class="row contacts">
+        <div class="col-lg-12 contacts">
             <div class="col-lg-12">
                 <h2 class="page-header">Контакты</h2>
             </div>
@@ -364,7 +364,7 @@
         <!-- /.row -->
             
         
-            <div class="row">
+            <div class="col-lg-12">
                 <div class="col-md-8">
                     <h2>Электронный кабинет клиента компании</h2>
                     <a target="_blank" class="btn btn-default" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
@@ -372,17 +372,17 @@
             </div>
         
                   
-              
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                	<span class="copyright">Copyright &copy; NMCC {% now "Y" %}</span>                    
-                </div>
-            </div>
-        </footer>
+		              
+	        
+	
+	        <!-- Footer -->
+	        <footer class="col-lg-12">	            
+	            <hr>
+	                <div>
+	                	<small><span class="copyright">Copyright &copy; NMCC {% now "Y" %}</span></small>                    
+	            	</div>	            
+	        </footer>
+        
 
     </div>    
 </div>    
