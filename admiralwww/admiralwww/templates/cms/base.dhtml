@@ -26,7 +26,7 @@
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ STATIC_URL }}bootstrap/css/modern-business.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}bootstrap/css/modern-business.css?v.001" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ STATIC_URL }}bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
