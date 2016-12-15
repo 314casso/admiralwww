@@ -66,7 +66,7 @@ class Doc(models.Model):
         default=datetime.date.today(),
         )    
         
-    doc_category = models.ForeignKey(DocCategory)
+    doc_category = models.ForeignKey(DocCategory, verbose_name=_('document category'))
     
     def __unicode__(self):
         return u"%s" % self.title
