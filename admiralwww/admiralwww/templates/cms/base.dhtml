@@ -152,7 +152,7 @@
                 </h1>
                 <p>            
 					Компания ООО «Новороссийская Морская Контейнерная Компания» основана в 2009 году и является линейным агентом Admiral Container Lines Inc. 
-					<a href="http://www.acolines.com">www.acolines.com</a>					
+					<a target="_blank" href="http://www.acolines.com">www.acolines.com</a>					
 					Компания Admiral Container Lines Inc. является региональным контейнерным перевозчиком, оперирующим собственными флотом и парком контейнеров в Черном и восточной части Средиземного морей, 
 					и связывает еженедельным сервисом порты Турции, Израиля, Украины и Египта с портом Новороссийск. 
 				</p><p>
@@ -270,7 +270,7 @@
                    <div class="panel-body">
                    	<div class="list-group">		
                    	{% for item in bids_handling.doc_set.all %}                  	                   	
-	                   	<a href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
+	                   	<a target="_blank" href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
 	                   	{{ item.title }}
 	                   	{% if item.description %}
 	                   	<hr>							                   	
@@ -308,7 +308,7 @@
                    <div class="panel-body">
                    	<div class="list-group">		
                    	{% for item in instructions.doc_set.all %}                  	                   	
-	                   	<a href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
+	                   	<a target="_blank" href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
 	                   	{{ item.title }}
 	                   	{% if item.description %}
 	                   	<hr>							                   	
@@ -329,7 +329,7 @@
                    <div class="panel-body">
                    	<div class="list-group">		
                    	{% for item in documents.doc_set.all %}                  	                   	
-	                   	<a href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
+	                   	<a target="_blank" href="{{ MEDIA_URL }}{{ item.attachment }}" class="list-group-item">
 	                   	{{ item.title }}
 	                   	{% if item.description %}
 	                   	<hr>							                   	
