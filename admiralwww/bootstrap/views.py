@@ -9,6 +9,7 @@ from django.utils.encoding import force_unicode
 from django.contrib.sites.models import get_current_site
 from django.http import HttpResponse
 from admiralwww.local_settings import DEFAULT_FROM_EMAIL, SERVICES
+from admiralwww.settings import DEBUG
 from django.views.generic.base import TemplateView
 
 def neighborhood(iterable):
@@ -44,9 +45,11 @@ def port_services(request):
 def send_email(request): 
     service = SERVICES.get(request.POST['service'].replace('-','_'))
     COMMERCE_EMAIL = 'commerce_email'
-    p = Params.objects.get(key=COMMERCE_EMAIL)    
-    mailto = p.value
-    mailto = 'it-support2@ruscon.global'    
+    p = Params.objects.get(key=COMMERCE_EMAIL)
+    if DEBUG:
+        mailto = 'it-support2@ruscon.global'    
+    else:
+        mailto = p.value        
     reply_email = request.POST['email']
     t = loader.get_template(service['template'])
     c = Context(request.POST)
