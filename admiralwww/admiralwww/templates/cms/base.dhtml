@@ -344,10 +344,8 @@
 			</div>
           
         <!-- Features Section -->
-        <div class="col-lg-12 contacts">
-            <div class="col-lg-12">
-                <h2 class="page-header">Контакты</h2>
-            </div>
+        <div class="col-lg-12 contacts">            
+            <h2 class="page-header">Контакты</h2>            
             <div class="col-md-6">
                 <h4>ООО «Новороссийская Морская Контейнерная Компания»:</h4>
                 <ul class="list-unstyled">
@@ -364,12 +362,10 @@
         <!-- /.row -->
             
         
-            <div class="col-lg-12">
-                <div class="col-md-8">
-                    <h2>Электронный кабинет клиента компании</h2>
-                    <a target="_blank" class="btn btn-default" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>
-                </div>                
-            </div>
+         <div class="col-lg-12">                
+           <h2>Электронный кабинет клиента компании</h2>
+           <a target="_blank" class="btn btn-default" href="http://office.nmcc.ru/e-office/ru_RU/">Веб-офис</a>                                
+         </div>
         
                   
 		              
