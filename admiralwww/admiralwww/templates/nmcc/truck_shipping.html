@@ -1,0 +1,38 @@
+{% extends "nmcc/base_modal.html" %}
+{% block custom_fields %}           	   
+           	   
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Город отправки *" name="pol" required data-validation-required-message="Пожалуйста, введите город отправки.">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Город выгрузки *" name="pod" required data-validation-required-message="Пожалуйста, введите город выгрузки.">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Город таможенных пераций" name="custom_city">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Режим перевозки" name="mode">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Наименование груза" name="cargo">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Тип контейнера *" name="typesize" required data-validation-required-message="Пожалуйста, введите тип контейнера.">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Вес груза *" name="weight" required data-validation-required-message="Пожалуйста, введите вес груза.">
+    <p class="help-block text-danger"></p>
+</div>               
+{% endblock custom_fields %}

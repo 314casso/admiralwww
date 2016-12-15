@@ -60,4 +60,3 @@ class PortRate(models.Model):
         ordering = ['sort_order']
         verbose_name = _("PortRate")
         verbose_name_plural = _("PortRates")
-    

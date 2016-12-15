@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//admiralwww/local_settings.py=utf-8
 encoding//admiralwww/settings.py=utf-8
 encoding//bootstrap/models.py=utf-8
 encoding//bootstrap/templatetags/helpers.py=utf-8
+encoding//bootstrap/views.py=utf-8
+encoding//rdoc/models.py=utf-8

@@ -70,7 +70,7 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 /* Responsive Styles */
@@ -126,4 +126,29 @@ table.table-data {
 
 .right {	
 	text-align: right;
+}
+
+#online-service li {
+	padding: 15px 0;
+}
+
+#online-service .service-icon {
+	float:left;
+	padding: 0 15px 0 0;
+}
+
+.contacts li{
+	padding: 3px 0;
+}
+
+.contacts .label-default{
+	background: #999;
+}
+
+h3 a{
+	color: #333;	
+}
+
+h3 a:hover{	
+	/* text-decoration: none;*/		
 }

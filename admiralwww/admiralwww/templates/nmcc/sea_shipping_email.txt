@@ -1,0 +1,7 @@
+{% extends "nmcc/base_service_email.txt" %}{% block custom_fields %}
+Порт погрузки: {{ pol }}				
+Порт выгрузки: {{ pod }}
+Наименование груза: {{ cargo }}				
+Тип контейнера: {{ typesize }}	
+Нужна ли доставка контейнера на погрузку/выгрузку: {{ doorshipping }}
+{% endblock custom_fields %}

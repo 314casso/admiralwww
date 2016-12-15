@@ -1,0 +1,8 @@
+{% extends "nmcc/base_service_email.txt" %}{% block custom_fields %}
+Станция/город отправления: {{ pol }}				
+Станция/город назначения: {{ pod }}
+Режим перевозки: {{ mode }}
+Наименование груза: {{ cargo }}				
+Тип контейнера: {{ typesize }}	
+Вес груза: {{ weight }}
+{% endblock custom_fields %}

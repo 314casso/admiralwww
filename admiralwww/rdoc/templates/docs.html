@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% if docs %}
+    <ul class="doclist">
+    {% for doc in docs %}
+        <li><span>{{ doc.issue_date|date:"d.m.Y"}}</span><a href="{{ MEDIA_URL }}{{ doc.attachment }}">{{ doc.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>{% trans "No docs are available" %}</p>
+{% endif %}

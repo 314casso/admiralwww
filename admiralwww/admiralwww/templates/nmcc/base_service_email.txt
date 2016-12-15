@@ -1,0 +1,13 @@
+Получено письмо через веб-форму сайта {{ site }}		 
+
+Запрос услуги "{{ service }}"		
+{% block custom_fields %}{% endblock custom_fields %}		
+Имя: {{ name }}				
+Компания: {{ company }}
+Email: {{ email }}				
+Телефон: {{ phone }}			
+{% if message %}
+Комментарий:	
+{{ message }}
+{% endif %}
+	

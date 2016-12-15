@@ -3,6 +3,8 @@ from django import template
 from django.utils.safestring import mark_safe
 import random
 from bootstrap.models import Params
+from admiralwww.local_settings import SERVICES
+from rdoc.models import DocCategory
 register = template.Library()
 
 EMAIL = 'email'
@@ -15,7 +17,7 @@ def hide_email(email):
     value = '<script type="text/javascript">// <![CDATA['+"\n \
            \tdocument.write('%s')\n \
            \t// ]]></script>\n" % (mailto_link)
-    return mark_safe(value)
+    return mark_safe(value.strip())
 
 def encode_string(value):
     """
@@ -43,4 +45,17 @@ def get_param(key, param_type=None):
             return hide_email(p.value)
         return p.value    
     except Params.DoesNotExist:
-        return "" 
+        return ""
+    
+    
+@register.assignment_tag
+def get_services():    
+    return SERVICES    
+
+
+@register.assignment_tag
+def get_category(slug):
+    try:
+        return DocCategory.objects.get(slug=slug)    
+    except:
+        pass

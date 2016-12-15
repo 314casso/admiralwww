@@ -1,0 +1,29 @@
+{% extends "nmcc/base_modal.html" %}
+{% block custom_fields %}           	   
+           	   
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Порт погрузки *" name="pol" required data-validation-required-message="Пожалуйста, введите порт погрузки.">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Порт выгрузки *" name="pod" required data-validation-required-message="Пожалуйста, введите порт выгрузки.">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Наименование груза" name="cargo">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Тип контейнера" name="typesize">
+    <p class="help-block text-danger"></p>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Нужна ли доставка контейнера на погрузку/выгрузку" name="doorshipping">
+    <p class="help-block text-danger"></p>
+</div>
+               
+{% endblock custom_fields %}
